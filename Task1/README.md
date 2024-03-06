@@ -4,18 +4,29 @@ This project provides a Dockerized environment for text classification. Follow t
 
 ## Model Training
 
-The model training was performed using Google Colab, which provides access to GPUs for faster computation. The code and data used for training can be found in the notebook [train_and_publish_tc_model.ipynb](https://github.com/chabirOael/WaeCha024/blob/master/Task1/train_and_publish_tc_model.ipynb).
+The model training was performed using <b>Google Colab</b>, which provides access to GPUs for faster computation. The code used for training can be found in the notebook [train_and_publish_tc_model.ipynb](https://github.com/chabirOael/WaeCha024/blob/master/Task1/train_and_publish_tc_model.ipynb).
 
 Make sure to follow the instructions in the notebook to set up the environment and run the training process.
 
-## Note
+<b>[Local Run]</b> The following packages are required if you wish to train the model locally (using `pip`):
+- transformers
+- datasets
+- transformers[torch]
+- evaluate
+    
+The above packages can be installed using the following code:
 
-Please note that the code and data used for training are not included in this repository. You will need to download them separately from the provided link.
+```bash
+pip install transformers datasets evaluate transformers[torch]
+```
+
+# Testing the Text Classifier (In Docker environment)
 
 
 ## Prerequisites
 
 - Docker: Make sure you have Docker installed on your machine. You can download it from [here](https://www.docker.com/get-started).
+
 
 ## Getting Started
 
@@ -49,10 +60,11 @@ Please note that the code and data used for training are not included in this re
     http POST http://localhost:8000/classify text="Spirituosen Grosshandel"  
     ```
     You can change the text content to test the classification made by the model.
-## Configuration
 
-You can customize the project by modifying the configuration files located in the `<project-directory>/config` directory.
+    You can also use `Postman` for testing. Do not forget to set the body as follow:
+    ```json
+    {
+    "text": "Spirituosen Grosshandel"
+    }
+    ```
 
-## Usage
-
-Provide instructions on how to use the text classification application here.
