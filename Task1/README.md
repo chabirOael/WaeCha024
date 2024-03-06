@@ -4,7 +4,7 @@ This project provides a Dockerized environment for text classification. Follow t
 
 ## Model Training
 
-The model training was performed using Google Colab, which provides access to GPUs for faster computation. The code and data used for training can be found in the notebook [train_and_publish_tc_model.ipynb](https://colab.research.google.com/notebooks/intro.ipynb).
+The model training was performed using Google Colab, which provides access to GPUs for faster computation. The code and data used for training can be found in the notebook [train_and_publish_tc_model.ipynb](https://github.com/chabirOael/WaeCha024/blob/master/Task1/train_and_publish_tc_model.ipynb).
 
 Make sure to follow the instructions in the notebook to set up the environment and run the training process.
 
