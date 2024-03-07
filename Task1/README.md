@@ -56,6 +56,8 @@ pip install transformers datasets evaluate torch transformers[torch]
     ```
 
 5. Test the application:
+    
+    <b>Depending on your internet connection speed, please consider waiting some time until all dependencies are downloaded to be able to test the app.</b>
 
     ```bash
     http POST http://localhost:8000/classify text="Spirituosen Grosshandel"  
