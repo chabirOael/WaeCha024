@@ -13,11 +13,12 @@ Make sure to follow the instructions in the notebook to set up the environment a
 - datasets
 - transformers[torch]
 - evaluate
+- pytorch
     
 The above packages can be installed using the following code:
 
 ```bash
-pip install transformers datasets evaluate transformers[torch]
+pip install transformers datasets evaluate torch transformers[torch]
 ```
 
 # Testing the Text Classifier (In Docker environment)
@@ -51,7 +52,7 @@ pip install transformers datasets evaluate transformers[torch]
 4. Run the Docker container:
 
     ```bash
-    docker run -d -p 8080:8080 visable_tc_app
+    docker run -d -p 8000:8000 visable_tc_app
     ```
 
 5. Test the application:
@@ -59,7 +60,7 @@ pip install transformers datasets evaluate transformers[torch]
     ```bash
     http POST http://localhost:8000/classify text="Spirituosen Grosshandel"  
     ```
-    You can change the text content to test the classification made by the model.
+    You can change the text content to test more the capabilities of classification made by the model.
 
     You can also use `Postman` for testing. Do not forget to set the body as follow:
     ```json
