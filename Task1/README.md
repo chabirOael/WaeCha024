@@ -63,9 +63,18 @@ pip install transformers datasets evaluate torch transformers[torch]
     You can change the text content to test more the capabilities of classification made by the model.
 
     You can also use `Postman` for testing. Do not forget to set the body as follow:
+    
+    <b>[OPTION 1: Single text input]</b>
     ```json
     {
     "text": "Spirituosen Grosshandel"
+    }
+    ```
+
+    <b>[OPTION 2: List of texts input]</b>
+    ```json
+    {
+    "text": ["Spirituosen Grosshandel", "hydroxypropyl acrylat"]
     }
     ```
 
