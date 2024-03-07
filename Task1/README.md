@@ -80,3 +80,19 @@ pip install transformers datasets evaluate torch transformers[torch]
     }
     ```
 
+    <b>[OUTPUT SAMPLE: ]</b>
+    ```json
+    [
+        {
+            "text": "Spirituosen Grosshandel",
+            "label": "ft",
+            "score": 0.9979797005653381
+        },
+        {
+            "text": "hydroxypropyl acrylat",
+            "label": "ch",
+            "score": 0.9965736865997314
+        }
+    ]
+    ```
+
