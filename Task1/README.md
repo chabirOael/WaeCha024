@@ -1,4 +1,4 @@
-# Text Classification Docker Project
+# Text Classification Project
 
 This project provides a Dockerized environment for text classification. Follow the steps below to build and run the project.
 
